@@ -1,9 +1,8 @@
+
+
 fun main() {
-    print("Введите кол-во лайков: ")
-    val likes = readLine()?.toUInt() ?: return
-    if(likes % 10U == 1U){
-        println("Понравилось $likes человеку")
-    }else {
-        println("Понравилось $likes людям")
-    }
+    val likes = 61
+    var people = "человеку"
+    if ((likes % 10 == 1) && (likes % 100 != 11)) people else people = "людям"
+        println("Понравилось $likes $people")
 }
